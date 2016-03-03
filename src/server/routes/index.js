@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(req, res, next) {
     console.log(req.body);
-    res.status(200).send('Yay, everythings GREAT!!!!')
+    res.status(200).render('index', { title: 'You done a validate.' })
 });
 
 module.exports = router;
