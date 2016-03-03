@@ -13,7 +13,7 @@ router.post('/', function(req, res, next) {
         res.render('index', {title: 'Express Form Validation', success : 'All good!'})
     } else {
         // console.log(validMessage);
-        res.render('index', {title: 'Express Form Validation', error : validMessage})
+        res.status(200).render('index', {title: 'Express Form Validation', error : validMessage})
     }
 });
 
